@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrinkUp – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the DrinkUp app">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0F0F0F;
+      --surface: #1C1C1E;
+      --text: #FFFFFF;
+      --text-secondary: rgba(255,255,255,0.7);
+      --text-muted: rgba(255,255,255,0.5);
+      --primary: #A855F7;
+      --border: rgba(255,255,255,0.1);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 16px;
+    }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 24px 0 0;
+    }
+    .lang-btn {
+      padding: 8px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { color: var(--text); border-color: var(--primary); }
+    .lang-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    .updated {
+      color: var(--text-muted);
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 32px 0 12px;
+      color: var(--text);
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    ul {
+      color: var(--text-secondary);
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    strong { color: var(--text); font-weight: 600; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: var(--surface);
+      border-left: 3px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+    .highlight p { margin: 0; color: var(--text); }
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🍻</div>
+      <h1>DrinkUp</h1>
+      <p class="subtitle">Privacy Policy / Datenschutzerklärung</p>
+      <div class="lang-switch">
+        <a href="#" class="lang-btn active" data-lang="en">🇬🇧 English</a>
+        <a href="#" class="lang-btn" data-lang="de">🇩🇪 Deutsch</a>
+      </div>
+    </header>
+
+    <p class="updated">Last updated / Zuletzt aktualisiert: April 17, 2026</p>
+
+    <!-- ─────────────────────── ENGLISH ─────────────────────── -->
+    <section class="lang-section active" id="lang-en">
+      <div class="highlight">
+        <p><strong>Short version:</strong> DrinkUp does not collect any personal data. There are no user accounts. We use anonymous, aggregated usage analytics (PostHog, EU-hosted) to improve the app — you can opt out at any time in iOS settings.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>This privacy policy applies to the mobile application <strong>"DrinkUp"</strong> (the "App") for iOS and Android.</p>
+      <p>
+        Operator (Data Controller):<br>
+        Michael Haller<br>
+        Email: <a href="mailto:michael.haller@unibz.it">michael.haller@unibz.it</a>
+      </p>
+
+      <h2>2. What data we collect</h2>
+
+      <h3>2.1 Data you provide</h3>
+      <p>The App does <strong>not</strong> require an account, login, or registration. Player names you enter when setting up a game are stored only locally on your device and are never transmitted to our servers.</p>
+
+      <h3>2.2 Settings stored locally</h3>
+      <p>The following preferences are stored on your device using the operating system's local storage (AsyncStorage). They never leave your device:</p>
+      <ul>
+        <li>Selected language</li>
+        <li>Theme preference (dark/light)</li>
+        <li>Sound and haptic settings</li>
+        <li>Onboarding completion status</li>
+        <li>Player names from previous sessions</li>
+      </ul>
+
+      <h3>2.3 Anonymous analytics</h3>
+      <p>We use <strong>PostHog</strong> (EU cloud, hosted in Germany) to collect anonymous usage statistics. This helps us understand which games are popular and improve the App. The following anonymous events may be collected:</p>
+      <ul>
+        <li>App opened / closed</li>
+        <li>Which game was selected</li>
+        <li>Game settings (e.g. number of players, language, mode)</li>
+        <li>Device type and OS version</li>
+        <li>App version</li>
+      </ul>
+      <p><strong>What we do NOT collect:</strong> No name, email, phone number, exact location, IP address (anonymized by PostHog), advertising ID, or any data that could identify you personally.</p>
+
+      <h2>3. Legal basis (GDPR Art. 6)</h2>
+      <ul>
+        <li><strong>Local data:</strong> Necessary for app functionality (Art. 6(1)(b))</li>
+        <li><strong>Anonymous analytics:</strong> Legitimate interest in improving the app (Art. 6(1)(f))</li>
+      </ul>
+
+      <h2>4. Third-party services</h2>
+
+      <h3>4.1 PostHog</h3>
+      <p>Provider: PostHog Inc., hosted on PostHog EU Cloud (Germany). PostHog only receives anonymous events as listed above. <a href="https://posthog.com/privacy" target="_blank">PostHog Privacy Policy</a></p>
+
+      <h3>4.2 Apple App Store / Google Play</h3>
+      <p>When you download the App, Apple or Google collects information per their own privacy policies. We have no control over and no access to that data beyond aggregated download statistics.</p>
+      <ul>
+        <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      </ul>
+
+      <h2>5. Data retention</h2>
+      <p>Local data on your device is retained until you delete the App. Anonymous analytics events are retained by PostHog for up to 12 months and then automatically deleted.</p>
+
+      <h2>6. Your rights (GDPR)</h2>
+      <p>Since we do not collect personal data, most GDPR rights are automatically fulfilled. You still have the right to:</p>
+      <ul>
+        <li>Information about data processing (this document)</li>
+        <li>Disable analytics by enabling "Limit Ad Tracking" in iOS settings</li>
+        <li>Delete all local data by uninstalling the App</li>
+        <li>File a complaint with your local data protection authority</li>
+      </ul>
+
+      <h2>7. Children</h2>
+      <p>The App is rated <strong>17+</strong> and intended for adults due to its drinking-game theme. We do not knowingly collect any data from children under 17.</p>
+
+      <h2>8. Changes to this policy</h2>
+      <p>We may update this privacy policy occasionally. The "last updated" date at the top reflects the latest version. Material changes will be communicated through the App.</p>
+
+      <h2>9. Contact</h2>
+      <p>For any privacy-related questions, contact us at:<br>
+      <a href="mailto:michael.haller@unibz.it">michael.haller@unibz.it</a></p>
+    </section>
+
+    <!-- ─────────────────────── DEUTSCH ─────────────────────── -->
+    <section class="lang-section" id="lang-de">
+      <div class="highlight">
+        <p><strong>Kurzfassung:</strong> DrinkUp sammelt keine persönlichen Daten. Es gibt keine User-Accounts. Wir nutzen anonyme, aggregierte Nutzungsstatistiken (PostHog, EU-gehostet) um die App zu verbessern — du kannst das jederzeit in den iOS-Einstellungen deaktivieren.</p>
+      </div>
+
+      <h2>1. Wer wir sind</h2>
+      <p>Diese Datenschutzerklärung gilt für die mobile App <strong>"DrinkUp"</strong> (die "App") für iOS und Android.</p>
+      <p>
+        Betreiber (Verantwortlicher):<br>
+        Michael Haller<br>
+        E-Mail: <a href="mailto:michael.haller@unibz.it">michael.haller@unibz.it</a>
+      </p>
+
+      <h2>2. Welche Daten wir erfassen</h2>
+
+      <h3>2.1 Daten, die du angibst</h3>
+      <p>Die App benötigt <strong>keinen</strong> Account, kein Login und keine Registrierung. Spielernamen, die du beim Einrichten eines Spiels eingibst, werden nur lokal auf deinem Gerät gespeichert und niemals an unsere Server übertragen.</p>
+
+      <h3>2.2 Lokal gespeicherte Einstellungen</h3>
+      <p>Die folgenden Einstellungen werden auf deinem Gerät über den lokalen Speicher des Betriebssystems (AsyncStorage) gesichert. Sie verlassen dein Gerät nie:</p>
+      <ul>
+        <li>Ausgewählte Sprache</li>
+        <li>Theme-Präferenz (Dunkel/Hell)</li>
+        <li>Sound- und Haptik-Einstellungen</li>
+        <li>Onboarding-Status</li>
+        <li>Spielernamen aus vorherigen Sessions</li>
+      </ul>
+
+      <h3>2.3 Anonyme Statistiken</h3>
+      <p>Wir nutzen <strong>PostHog</strong> (EU-Cloud, gehostet in Deutschland) um anonyme Nutzungsstatistiken zu erfassen. Das hilft uns zu verstehen, welche Spiele beliebt sind und die App zu verbessern. Folgende anonyme Events können erfasst werden:</p>
+      <ul>
+        <li>App geöffnet / geschlossen</li>
+        <li>Welches Spiel ausgewählt wurde</li>
+        <li>Spieleinstellungen (z.B. Anzahl Spieler, Sprache, Modus)</li>
+        <li>Gerätetyp und Betriebssystem-Version</li>
+        <li>App-Version</li>
+      </ul>
+      <p><strong>Was wir NICHT erfassen:</strong> Keinen Namen, keine E-Mail, keine Telefonnummer, keinen genauen Standort, keine IP-Adresse (von PostHog anonymisiert), keine Werbe-ID und keine Daten, die dich persönlich identifizieren könnten.</p>
+
+      <h2>3. Rechtsgrundlage (DSGVO Art. 6)</h2>
+      <ul>
+        <li><strong>Lokale Daten:</strong> Erforderlich für die App-Funktionalität (Art. 6 Abs. 1 lit. b)</li>
+        <li><strong>Anonyme Statistiken:</strong> Berechtigtes Interesse zur Verbesserung der App (Art. 6 Abs. 1 lit. f)</li>
+      </ul>
+
+      <h2>4. Drittanbieter</h2>
+
+      <h3>4.1 PostHog</h3>
+      <p>Anbieter: PostHog Inc., gehostet auf PostHog EU Cloud (Deutschland). PostHog erhält ausschließlich die oben genannten anonymen Events. <a href="https://posthog.com/privacy" target="_blank">Datenschutzerklärung von PostHog</a></p>
+
+      <h3>4.2 Apple App Store / Google Play</h3>
+      <p>Beim Download der App erfassen Apple oder Google Informationen gemäß ihrer eigenen Datenschutzerklärungen. Wir haben keine Kontrolle über diese Daten und keinen Zugriff darauf, abgesehen von aggregierten Download-Statistiken.</p>
+      <ul>
+        <li><a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank">Apple Datenschutzerklärung</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=de" target="_blank">Google Datenschutzerklärung</a></li>
+      </ul>
+
+      <h2>5. Speicherdauer</h2>
+      <p>Lokale Daten auf deinem Gerät werden gespeichert, bis du die App löschst. Anonyme Statistik-Events werden von PostHog bis zu 12 Monate aufbewahrt und dann automatisch gelöscht.</p>
+
+      <h2>6. Deine Rechte (DSGVO)</h2>
+      <p>Da wir keine personenbezogenen Daten erfassen, sind die meisten DSGVO-Rechte automatisch erfüllt. Du hast trotzdem das Recht auf:</p>
+      <ul>
+        <li>Information über die Datenverarbeitung (dieses Dokument)</li>
+        <li>Deaktivierung der Analytik durch "Werbe-Tracking einschränken" in den iOS-Einstellungen</li>
+        <li>Löschung aller lokalen Daten durch Deinstallation der App</li>
+        <li>Beschwerde bei deiner zuständigen Datenschutzbehörde</li>
+      </ul>
+
+      <h2>7. Kinder</h2>
+      <p>Die App ist mit <strong>17+</strong> klassifiziert und für Erwachsene gedacht, da sie Trinkspiele enthält. Wir erfassen wissentlich keine Daten von Kindern unter 17 Jahren.</p>
+
+      <h2>8. Änderungen dieser Erklärung</h2>
+      <p>Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Das "Zuletzt aktualisiert"-Datum oben spiegelt die neueste Version wider. Wesentliche Änderungen werden in der App kommuniziert.</p>
+
+      <h2>9. Kontakt</h2>
+      <p>Bei Fragen zum Datenschutz erreichst du uns unter:<br>
+      <a href="mailto:michael.haller@unibz.it">michael.haller@unibz.it</a></p>
+    </section>
+
+    <footer>
+      © 2026 DrinkUp · <a href="mailto:michael.haller@unibz.it">Contact</a>
+    </footer>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.lang-btn');
+    const sections = document.querySelectorAll('.lang-section');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const lang = btn.dataset.lang;
+        buttons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        sections.forEach(s => s.classList.toggle('active', s.id === 'lang-' + lang));
+        // Update URL hash without scrolling
+        history.replaceState(null, '', '#' + lang);
+      });
+    });
+    // Auto-detect language from browser or hash
+    const hash = window.location.hash.slice(1);
+    if (hash === 'de') {
+      document.querySelector('[data-lang="de"]').click();
+    } else if (!hash && navigator.language.startsWith('de')) {
+      document.querySelector('[data-lang="de"]').click();
+    }
+  </script>
+</body>
+</html>
